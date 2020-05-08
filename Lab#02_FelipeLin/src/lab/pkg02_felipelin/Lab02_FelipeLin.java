@@ -181,7 +181,9 @@ public class Lab02_FelipeLin {
 
                                         case 2: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Lista);
+                                            for (Casas casas : Lista) {
+                                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
+                                            }
 
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
@@ -193,7 +195,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 3: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Lista);
+                                            for (Casas casas : Lista) {
+                                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
+                                            }
 
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
@@ -206,7 +210,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 4: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Lista);
+                                            for (Casas casas : Lista) {
+                                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
+                                            }
 
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
@@ -218,7 +224,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 5: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Lista);
+                                            for (Casas casas : Lista) {
+                                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
+                                            }
 
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
@@ -230,7 +238,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 6: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Lista);
+                                            for (Casas casas : Lista) {
+                                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
+                                            }
 
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
@@ -243,8 +253,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 7: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Lista);
-
+                                            for (Casas casas : Lista) {
+                                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de pisos");
@@ -255,8 +266,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 8: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Lista);
-
+                                            for (Casas casas : Lista) {
+                                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de baños");
@@ -267,8 +279,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 9: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Lista);
-
+                                            for (Casas casas : Lista) {
+                                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de cuartos");
@@ -279,8 +292,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 10: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Lista);
-
+                                            for (Casas casas : Lista) {
+                                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             if (((Casas) Lista.get(pos)).getComprado() == 1) {
@@ -296,8 +310,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 11: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Lista);
-
+                                            for (Casas casas : Lista) {
+                                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo estado de la casa");
@@ -309,7 +324,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 12: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Lista);
+                                            for (Casas casas : Lista) {
+                                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
+                                            }
 
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
@@ -328,8 +345,9 @@ public class Lab02_FelipeLin {
                                     switch (modi) {
                                         case 1: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Construccion);
-
+                                            for (Casas casas : Construccion) {
+                                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de casa");
@@ -340,8 +358,9 @@ public class Lab02_FelipeLin {
 
                                         case 2: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Construccion);
-
+                                            for (Casas casas : Construccion) {
+                                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero bloque");
@@ -352,8 +371,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 3: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Construccion);
-
+                                            for (Casas casas : Construccion) {
+                                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo color");
@@ -365,8 +385,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 4: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Construccion);
-
+                                            for (Casas casas : Construccion) {
+                                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo ancho");
@@ -377,8 +398,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 5: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Construccion);
-
+                                            for (Casas casas : Construccion) {
+                                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo largo");
@@ -389,8 +411,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 6: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Construccion);
-
+                                            for (Casas casas : Construccion) {
+                                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese si fue comprado o no");
@@ -402,8 +425,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 7: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Construccion);
-
+                                            for (Casas casas : Construccion) {
+                                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de pisos");
@@ -414,8 +438,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 8: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Construccion);
-
+                                            for (Casas casas : Construccion) {
+                                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de baños");
@@ -426,8 +451,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 9: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Construccion);
-
+                                            for (Casas casas : Construccion) {
+                                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de cuartos");
@@ -438,8 +464,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 10: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Construccion);
-
+                                            for (Casas casas : Construccion) {
+                                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             if (((Casas) Construccion.get(pos)).getComprado() == 1) {
@@ -455,8 +482,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 11: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Construccion);
-
+                                            for (Casas casas : Construccion) {
+                                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo estado de la casa");
@@ -468,8 +496,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 12: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Construccion);
-
+                                            for (Casas casas : Construccion) {
+                                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo Ingeniero");
@@ -487,8 +516,9 @@ public class Lab02_FelipeLin {
                                     switch (modi) {
                                         case 1: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Espera);
-
+                                            for (Casas casas : Espera) {
+                                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de casa");
@@ -499,8 +529,9 @@ public class Lab02_FelipeLin {
 
                                         case 2: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Espera);
-
+                                            for (Casas casas : Espera) {
+                                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero bloque");
@@ -511,8 +542,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 3: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Espera);
-
+                                            for (Casas casas : Espera) {
+                                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo color");
@@ -524,8 +556,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 4: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Espera);
-
+                                            for (Casas casas : Espera) {
+                                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo ancho");
@@ -536,8 +569,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 5: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Espera);
-
+                                            for (Casas casas : Espera) {
+                                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo largo");
@@ -548,8 +582,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 6: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Espera);
-
+                                            for (Casas casas : Espera) {
+                                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese si fue comprado o no");
@@ -561,8 +596,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 7: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Espera);
-
+                                            for (Casas casas : Espera) {
+                                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de pisos");
@@ -573,8 +609,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 8: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Espera);
-
+                                            for (Casas casas : Espera) {
+                                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de baños");
@@ -585,8 +622,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 9: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Espera);
-
+                                            for (Casas casas : Espera) {
+                                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de cuartos");
@@ -597,8 +635,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 10: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Espera);
-
+                                            for (Casas casas : Espera) {
+                                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             if (((Casas) Espera.get(pos)).getComprado() == 1) {
@@ -614,8 +653,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 11: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Espera);
-
+                                            for (Casas casas : Espera) {
+                                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo estado de la casa");
@@ -627,8 +667,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 12: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Espera);
-
+                                            for (Casas casas : Espera) {
+                                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo Ingeniero");
@@ -646,8 +687,9 @@ public class Lab02_FelipeLin {
                                     switch (modi) {
                                         case 1: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Demolicion);
-
+                                            for (Casas casas : Demolicion) {
+                                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de casa");
@@ -658,8 +700,9 @@ public class Lab02_FelipeLin {
 
                                         case 2: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Demolicion);
-
+                                            for (Casas casas : Demolicion) {
+                                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero bloque");
@@ -670,8 +713,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 3: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Demolicion);
-
+                                            for (Casas casas : Demolicion) {
+                                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo color");
@@ -683,8 +727,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 4: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Demolicion);
-
+                                            for (Casas casas : Demolicion) {
+                                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo ancho");
@@ -695,8 +740,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 5: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Demolicion);
-
+                                            for (Casas casas : Demolicion) {
+                                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo largo");
@@ -707,8 +753,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 6: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Demolicion);
-
+                                            for (Casas casas : Demolicion) {
+                                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese si fue comprado o no");
@@ -720,8 +767,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 7: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Demolicion);
-
+                                            for (Casas casas : Demolicion) {
+                                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de pisos");
@@ -732,8 +780,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 8: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Demolicion);
-
+                                            for (Casas casas : Demolicion) {
+                                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de baños");
@@ -744,8 +793,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 9: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Demolicion);
-
+                                            for (Casas casas : Demolicion) {
+                                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo numero de cuartos");
@@ -756,8 +806,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 10: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Demolicion);
-
+                                            for (Casas casas : Demolicion) {
+                                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             if (((Casas) Demolicion.get(pos)).getComprado() == 1) {
@@ -773,8 +824,9 @@ public class Lab02_FelipeLin {
                                         }
                                         case 11: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Demolicion);
-
+                                            for (Casas casas : Demolicion) {
+                                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
+                                            }
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
                                             System.out.println("Ingrese el nuevo estado de la casa");
@@ -787,7 +839,7 @@ public class Lab02_FelipeLin {
                                         case 12: {
                                             System.out.println("Casas listas");
                                             for (Casas casas : Demolicion) {
-                                                System.out.println(Demolicion.indexOf(casas) + " " + casas);
+                                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
                                             }
 
                                             System.out.println("Ingrese la posicion que quiere modificar");
@@ -811,17 +863,25 @@ public class Lab02_FelipeLin {
 
                             case 2: {
                                 System.out.println("Casas listas");
-                                System.out.println(Lista);
+                                for (Casas casas : Lista) {
+                                    System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
+                                }
                                 System.out.println("Casas en construccion");
-                                System.out.println(Construccion);
+                                for (Casas casas : Construccion) {
+                                    System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
+                                }
                                 System.out.println("Casas contruccion en espera");
-                                System.out.println(Espera);
+                                for (Casas casas : Espera) {
+                                    System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
+                                }
                                 System.out.println("Casas en espera de demolicion");
-                                System.out.println(Demolicion);
-
+                                for (Casas casas : Demolicion) {
+                                    System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
+                                }
                                 break;
                             }
                             case 4: {
+
                                 int pos;
                                 System.out.println("Ingrese tipo de casa quiere borrar");
                                 System.out.println("1. Lista\n2. En construccion \n3. Construccion en espera\n4. Espera de Demolicion");
@@ -829,7 +889,9 @@ public class Lab02_FelipeLin {
 
                                 if (estado == 1) {
                                     System.out.println("Casas listas");
-                                    System.out.println(Lista);
+                                    for (Casas casas : Lista) {
+                                        System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
+                                    }
 
                                     System.out.println("Ingrese la posicion que quiere eliminar");
                                     pos = leer.nextInt();
@@ -837,7 +899,9 @@ public class Lab02_FelipeLin {
                                     Lista.remove(pos);
                                 } else if (estado == 2) {
                                     System.out.println("Casas en construccion");
-                                    System.out.println(Construccion);
+                                    for (Casas casas : Construccion) {
+                                        System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
+                                    }
 
                                     System.out.println("Ingrese la posicion que quiere eliminar");
                                     pos = leer.nextInt();
@@ -845,7 +909,9 @@ public class Lab02_FelipeLin {
                                     Construccion.remove(pos);
                                 } else if (estado == 3) {
                                     System.out.println("Casas contruccion en espera");
-                                    System.out.println(Espera);
+                                    for (Casas casas : Espera) {
+                                        System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
+                                    }
 
                                     System.out.println("Ingrese la posicion que quiere eliminar");
                                     pos = leer.nextInt();
@@ -854,7 +920,9 @@ public class Lab02_FelipeLin {
 
                                 } else if (estado == 4) {
                                     System.out.println("Casas en espera de demolicion");
-                                    System.out.println(Demolicion);
+                                    for (Casas casas : Demolicion) {
+                                        System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
+                                    }
 
                                     System.out.println("Ingrese la posicion que quiere eliminar");
                                     pos = leer.nextInt();
@@ -872,6 +940,119 @@ public class Lab02_FelipeLin {
                     }
 
                     case 2: {
+
+                        System.out.println("Ingrese que estado de casa quiere manejar");
+                        System.out.println("1. Lista\n2. En construccion \n3. Construccion en espera\n4. Demoler");
+                        int estado = leer.nextInt();
+                        while (estado != 1 && estado != 2 && estado != 3 && estado != 4) {
+                            System.out.println("No existe esa opcion");
+                            System.out.println("1. Lista\n2. En construccion \n3. Construccion en espera\n4. Espera de Demolicion");
+                            estado = leer.nextInt();
+                        }
+
+                        if (estado == 1) {
+                            System.out.println("Casas listas");
+                            for (Casas casas : Lista) {
+                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas.getEstado());
+                            }
+
+                            System.out.println("Que posicion quiere modificar");
+                            int pos = leer.nextInt();
+                            while (pos > Lista.size() && pos < 0) {
+                                System.out.println("No existe esa posicion");
+                                System.out.println("Que posicion quiere modificar");
+                                pos = leer.nextInt();
+                            }
+
+                            System.out.println("4. Espera de Demolicion");
+                            int estado3 = leer.nextInt();
+
+                            while (estado3 != 4) {
+                                System.out.println("No existe otra opcion");
+                                System.out.println("4. Espera de Demolicion");
+                                estado3 = leer.nextInt();
+                            }
+
+                            if (Demolicion.size() > 3) {
+                                System.out.println("No puede agregar mas a la espera de demolicion");
+
+                            } else if (estado3 == 4) {
+                                ((Casas) Lista.get(pos)).setEstado(estado3);
+                                Demolicion.add(Lista.get(pos));
+                                Lista.remove(pos);
+                            }
+
+                        } else if (estado == 2) {
+                            System.out.println("Casas en construccion");
+                            for (Casas casas : Construccion) {
+                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas.getEstado());
+                            }
+
+                            System.out.println("Que posicion quiere modificar");
+                            int pos = leer.nextInt();
+
+                            System.out.println("1. Lista\n3. Construccion en espera");
+                            int estado3 = leer.nextInt();
+                            while (estado3 != 1 && estado3 != 3) {
+                                System.out.println("No existe otra opcion");
+                                System.out.println("1. Lista\n3. Construccion en espera");
+                                estado3 = leer.nextInt();
+                            }
+
+                            if (estado3 == 1) {
+                                ((Casas) Construccion.get(pos)).setEstado(estado3);
+                                Lista.add(Construccion.get(pos));
+                                Construccion.remove(pos);
+                            } else if (estado3 == 3) {
+                                ((Casas) Construccion.get(pos)).setEstado(estado3);
+                                Espera.add(Construccion.get(pos));
+                                Construccion.remove(pos);
+                            }
+
+                        } else if (estado == 3) {
+                            System.out.println("Casas contruccion en espera");
+                            for (Casas casas : Espera) {
+                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas.getEstado());
+                            }
+
+                            System.out.println("Que posicion quiere modificar");
+                            int pos = leer.nextInt();
+
+                            System.out.println("2. En construccion ");
+                            int estado3 = leer.nextInt();
+
+                            while (estado3 != 3) {
+                                System.out.println("No existe otra opcion");
+                                System.out.println("2. En construccion ");
+                                estado3 = leer.nextInt();
+                            }
+
+                            if (Construccion.size() > 5) {
+                                System.out.println("No puede agregar mas En construcccion");
+                            } else if (estado == 3) {
+                                ((Casas) Espera.get(pos)).setEstado(estado3);
+                                Construccion.add(Espera.get(pos));
+                                Espera.remove(pos);
+                            }
+
+                        } else if (estado == 4) {
+                            System.out.println("Casas en espera de demolicion");
+                            for (Casas casas : Demolicion) {
+                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas.getEstado());
+                            }
+
+                            System.out.println("Que posicion quiere demoler");
+                            int pos = leer.nextInt();
+                            while (pos > Demolicion.size() && pos < 0) {
+                                System.out.println("No puede ingresar esa posicion");
+                                System.out.println("Que posicion quiere demoler");
+                                pos = leer.nextInt();
+                            }
+
+                            Demolicion.remove(pos);
+
+                        }
+
                         break;
                     }
                     case 3: {
@@ -886,9 +1067,8 @@ public class Lab02_FelipeLin {
                 System.out.println("1. Registro de clases\n2. Manejo de Estados\n3. Salir");
                 menu = leer.nextInt();
             }
-        }
+        } else {
 
-        {
             System.out.println("Usuario o contraseña incorrecta!");
         }
 
