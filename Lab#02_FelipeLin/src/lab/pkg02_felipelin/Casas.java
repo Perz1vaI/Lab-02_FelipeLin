@@ -1,24 +1,31 @@
-
 package lab.pkg02_felipelin;
 
-
 public class Casas {
+
     private int NCasa;
     private int NBloque;
     private String Color;
     private int largo;
     private int ancho;
     private int comprado;
+    private int piso;
+    private int bano;
+    private int cuarto;
+    private String landlord;
     private String Estado;
     private String Inge;
 
-    public Casas(int NCasa, int NBloque, String Color, int largo, int ancho, int comprado, String Estado, String Inge) {
+    public Casas(int NCasa, int NBloque, String Color, int largo, int ancho, int comprado, int piso, int bano, int cuarto, String landlord, String Estado, String Inge) {
         this.NCasa = NCasa;
         this.NBloque = NBloque;
         this.Color = Color;
         this.largo = largo;
         this.ancho = ancho;
         this.comprado = comprado;
+        this.piso = piso;
+        this.bano = bano;
+        this.cuarto = cuarto;
+        this.landlord = landlord;
         this.Estado = Estado;
         this.Inge = Inge;
     }
@@ -71,6 +78,38 @@ public class Casas {
         this.comprado = comprado;
     }
 
+    public int getPiso() {
+        return piso;
+    }
+
+    public void setPiso(int piso) {
+        this.piso = piso;
+    }
+
+    public int getBano() {
+        return bano;
+    }
+
+    public void setBano(int bano) {
+        this.bano = bano;
+    }
+
+    public int getCuarto() {
+        return cuarto;
+    }
+
+    public void setCuarto(int cuarto) {
+        this.cuarto = cuarto;
+    }
+
+    public String getLandlord() {
+        return landlord;
+    }
+
+    public void setLandlord(String landlord) {
+        this.landlord = landlord;
+    }
+
     public String getEstado() {
         return Estado;
     }
@@ -89,9 +128,8 @@ public class Casas {
 
     @Override
     public String toString() {
-        return "Casas{" + "NCasa=" + NCasa + ", NBloque=" + NBloque + ", Color=" + Color + ", largo=" + largo + ", ancho=" + ancho + ", comprado=" + comprado + ", Estado=" + Estado + ", Inge=" + Inge + '}';
+        return "Casas{" + "NCasa=" + NCasa + ", NBloque=" + NBloque + ", Color=" + Color + ", largo=" + largo + ", ancho=" + ancho + ", comprado=" + comprado + ", piso=" + piso + ", bano=" + bano + ", cuarto=" + cuarto + ", landlord=" + landlord + ", Estado=" + Estado + ", Inge=" + Inge + '}';
     }
-    
-    
+
     
 }
