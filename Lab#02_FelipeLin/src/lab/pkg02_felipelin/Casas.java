@@ -129,7 +129,7 @@ public class Casas {
     @Override
     public String toString() {
         //return "Casas{" + "NCasa=" + NCasa + ", NBloque=" + NBloque + ", Color=" + Color + ", largo=" + largo + ", ancho=" + ancho + ", comprado=" + comprado + ", piso=" + piso + ", bano=" + bano + ", cuarto=" + cuarto + ", landlord=" + landlord + ", Estado=" + Estado + ", Inge=" + Inge + '}';
-        return "Casa[ Numero de casa: " + NCasa + ", Numero de bloque: " + NBloque + ", Color: " + Color + ", Largo: " + largo + ", Ancho: " + ancho + ", Comprado 1. Si 2. No: " + comprado + ", Piso: " + piso + ", Baño: " + bano + ", Cuarto: " + cuarto + ", Dueño: " + landlord + ", Estado 1. Listo 2. En Construccion 3. Construccion en espera 4. en espera de demolicion: " + Estado
+        return "Casa[ Numero de casa: " + NCasa + ", Numero de bloque: " + NBloque + ", Color: " + Color + ", Largo: " + largo + ", Ancho: " + ancho + ", Comprado = 1. Si 2. No: " + comprado + ", Piso: " + piso + ", Baño: " + bano + ", Cuarto: " + cuarto + ", Dueño: " + landlord + ", Estadoos = 1. Listo 2. En Construccion 3. Construccion en espera 4. en espera de demolicion: " + Estado
                 + ", Ingeniero: " + Inge;
     }
 

@@ -74,6 +74,7 @@ public class Lab02_FelipeLin {
                                     largo = leer.nextInt();
                                 }
 
+                                System.out.println("Ingrese si fue comprado o no");
                                 System.out.println("1. Si fue comprado\n2. No fue comprado");
                                 int comprado = leer.nextInt();
                                 while (comprado != 1 && comprado != 2) {
@@ -113,6 +114,7 @@ public class Lab02_FelipeLin {
                                     landlord = leer.nextLine();
                                 }
 
+                                System.out.println("Ingrese el estado de la casa");
                                 System.out.println("\n1. Lista\n2. En construccion \n3. Construccion en espera\n4. Espera de Demolicion");
                                 int estado = leer.nextInt();
                                 while (estado != 1 && estado != 2 && estado != 3 && estado != 4) {
@@ -953,7 +955,7 @@ public class Lab02_FelipeLin {
                         if (estado == 1) {
                             System.out.println("Casas listas");
                             for (Casas casas : Lista) {
-                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas.getEstado());
+                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
                             }
 
                             System.out.println("Que posicion quiere modificar");
@@ -985,7 +987,7 @@ public class Lab02_FelipeLin {
                         } else if (estado == 2) {
                             System.out.println("Casas en construccion");
                             for (Casas casas : Construccion) {
-                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas.getEstado());
+                                System.out.println("Posicion " + Construccion.indexOf(casas) + " " + casas);
                             }
 
                             System.out.println("Que posicion quiere modificar");
@@ -1012,7 +1014,7 @@ public class Lab02_FelipeLin {
                         } else if (estado == 3) {
                             System.out.println("Casas contruccion en espera");
                             for (Casas casas : Espera) {
-                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas.getEstado());
+                                System.out.println("Posicion " + Espera.indexOf(casas) + " " + casas);
                             }
 
                             System.out.println("Que posicion quiere modificar");
@@ -1038,7 +1040,7 @@ public class Lab02_FelipeLin {
                         } else if (estado == 4) {
                             System.out.println("Casas en espera de demolicion");
                             for (Casas casas : Demolicion) {
-                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas.getEstado());
+                                System.out.println("Posicion " + Demolicion.indexOf(casas) + " " + casas);
                             }
 
                             System.out.println("Que posicion quiere demoler");
