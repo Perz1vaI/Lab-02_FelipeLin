@@ -12,10 +12,10 @@ public class Casas {
     private int bano;
     private int cuarto;
     private String landlord;
-    private String Estado;
+    private int Estado;
     private String Inge;
 
-    public Casas(int NCasa, int NBloque, String Color, int largo, int ancho, int comprado, int piso, int bano, int cuarto, String landlord, String Estado, String Inge) {
+    public Casas(int NCasa, int NBloque, String Color, int largo, int ancho, int comprado, int piso, int bano, int cuarto, String landlord, int Estado, String Inge) {
         this.NCasa = NCasa;
         this.NBloque = NBloque;
         this.Color = Color;
@@ -110,11 +110,11 @@ public class Casas {
         this.landlord = landlord;
     }
 
-    public String getEstado() {
+    public int getEstado() {
         return Estado;
     }
 
-    public void setEstado(String Estado) {
+    public void setEstado(int Estado) {
         this.Estado = Estado;
     }
 
@@ -128,8 +128,9 @@ public class Casas {
 
     @Override
     public String toString() {
-        return "Casas{" + "NCasa=" + NCasa + ", NBloque=" + NBloque + ", Color=" + Color + ", largo=" + largo + ", ancho=" + ancho + ", comprado=" + comprado + ", piso=" + piso + ", bano=" + bano + ", cuarto=" + cuarto + ", landlord=" + landlord + ", Estado=" + Estado + ", Inge=" + Inge + '}';
+        //return "Casas{" + "NCasa=" + NCasa + ", NBloque=" + NBloque + ", Color=" + Color + ", largo=" + largo + ", ancho=" + ancho + ", comprado=" + comprado + ", piso=" + piso + ", bano=" + bano + ", cuarto=" + cuarto + ", landlord=" + landlord + ", Estado=" + Estado + ", Inge=" + Inge + '}';
+        return "Casa[ Numero de casa: " + NCasa + ", Numero de bloque: " + NBloque + ", Color: " + Color + ", Largo: " + largo + ", Ancho: " + ancho + ", Comprado 1. Si 2. No: " + comprado + ", Piso: " + piso + ", Baño: " + bano + ", Cuarto: " + cuarto + ", Dueño: " + landlord + ", Estado 1. Listo 2. En Construccion 3. Construccion en espera 4. en espera de demolicion: " + Estado
+                + ", Ingeniero: " + Inge;
     }
 
-    
 }

@@ -129,29 +129,29 @@ public class Lab02_FelipeLin {
                                 System.out.println("A Creado una casa exitosamente!\n\n");
 
                                 if (estado == 1) {
-                                    Lista.add(new Casas(Ncasa, NBloque, Color, largo, ancho, comprado, pisos, banos, cuartos, landlord, usuario, inge));
+                                    Lista.add(new Casas(Ncasa, NBloque, Color, largo, ancho, comprado, pisos, banos, cuartos, landlord, estado, inge));
                                 } else if (estado == 2) {
                                     if (Construccion.size() > 5) {
                                         System.out.println("No puede agregar mas casas en construccion");
                                         break;
                                     } else {
-                                        Construccion.add(new Casas(Ncasa, NBloque, Color, largo, ancho, comprado, pisos, banos, cuartos, landlord, usuario, inge));
+                                        Construccion.add(new Casas(Ncasa, NBloque, Color, largo, ancho, comprado, pisos, banos, cuartos, landlord, estado, inge));
                                     }
                                 } else if (estado == 3) {
-                                    Espera.add(new Casas(Ncasa, NBloque, Color, largo, ancho, comprado, pisos, banos, cuartos, landlord, usuario, inge));
+                                    Espera.add(new Casas(Ncasa, NBloque, Color, largo, ancho, comprado, pisos, banos, cuartos, landlord, estado, inge));
                                 } else if (estado == 4) {
                                     if (Demolicion.size() > 3) {
                                         System.out.println("No puede agregar mas casas en demolicion");
                                         break;
                                     } else {
-                                        Demolicion.add(new Casas(Ncasa, NBloque, Color, largo, ancho, comprado, pisos, banos, cuartos, landlord, usuario, inge));
+                                        Demolicion.add(new Casas(Ncasa, NBloque, Color, largo, ancho, comprado, pisos, banos, cuartos, landlord, estado, inge));
 
                                     }
                                 }
                                 break;
                             }
-                            case 2: {
-                                System.out.println("Ingrese cual estado de casa quiere modificar");
+                            case 3: {
+                                System.out.println("\n\nIngrese cual estado de casa quiere modificar");
                                 System.out.println("1. Lista\n2. En construccion \n3. Construccion en espera\n4. Espera de Demolicion");
                                 int estado = leer.nextInt();
                                 while (estado != 1 && estado != 2 && estado != 3 && estado != 4) {
@@ -159,21 +159,23 @@ public class Lab02_FelipeLin {
                                     System.out.println("1. Lista\n2. En construccion \n3. Construccion en espera\n4. Espera de Demolicion");
                                     estado = leer.nextInt();
                                 }
-                                System.out.println("Ingrese que desea modificar: ");
+                                System.out.println("\n\nIngrese que desea modificar: ");
                                 System.out.println("1. Numero de casa \n2. Numero de bloque\n3. Color\n4. Ancho\n5. Largo\n6. Si ya fue comprado o no\n"
                                         + "7. Numero de pisos\n8. Numero de baños\n9. Numero de cuartos\n10. Nombre del dueño\n11. Estado de la casa\n12. Nombre de ingeniero");
                                 int modi = leer.nextInt();
-                                if (estado == 1) {
+                                if (estado == 1 && Lista.size() > 0) {
                                     switch (modi) {
                                         case 1: {
                                             System.out.println("Casas listas");
-                                            System.out.println(Lista);
+                                            for (Casas casas : Lista) {
+                                                System.out.println("Posicion " + Lista.indexOf(casas) + " " + casas);
+                                            }
 
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
-                                            System.out.println("Ingrese el nuevo ancho");
-                                            int ancho = leer.nextInt();
-                                            ((Casas) Lista.get(pos)).setAncho(ancho);
+                                            System.out.println("Ingrese el nuevo numero de casa");
+                                            int Ncasa = leer.nextInt();
+                                            ((Casas) Lista.get(pos)).setNCasa(Ncasa);
                                             break;
                                         }
 
@@ -183,48 +185,138 @@ public class Lab02_FelipeLin {
 
                                             System.out.println("Ingrese la posicion que quiere modificar");
                                             int pos = leer.nextInt();
-                                            System.out.println("Ingrese el nuevo ancho");
-                                            int ancho = leer.nextInt();
-                                            ((Casas) Lista.get(pos)).setAncho(ancho);
+                                            System.out.println("Ingrese el nuevo numero bloque");
+                                            int Nbloque = leer.nextInt();
+                                            ((Casas) Lista.get(pos)).setNBloque(Nbloque);
+
                                             break;
                                         }
                                         case 3: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Lista);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo color");
+                                            leer.nextLine();
+                                            String color = leer.nextLine();
+                                            ((Casas) Lista.get(pos)).setColor(color);
 
                                             break;
                                         }
                                         case 4: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Lista);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo ancho");
+                                            int ancho = leer.nextInt();
+                                            ((Casas) Lista.get(pos)).setAncho(ancho);
 
                                             break;
                                         }
                                         case 5: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Lista);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo largo");
+                                            int ancho = leer.nextInt();
+                                            ((Casas) Lista.get(pos)).setAncho(ancho);
 
                                             break;
                                         }
                                         case 6: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Lista);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese si fue comprado o no");
+                                            System.out.println("1. Si \n2. No");
+                                            int comprado = leer.nextInt();
+                                            ((Casas) Lista.get(pos)).setComprado(comprado);
 
                                             break;
                                         }
                                         case 7: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Lista);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de pisos");
+                                            int pisos = leer.nextInt();
+                                            ((Casas) Lista.get(pos)).setPiso(pisos);
 
                                             break;
                                         }
                                         case 8: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Lista);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de baños");
+                                            int banos = leer.nextInt();
+                                            ((Casas) Lista.get(pos)).setBano(banos);
 
                                             break;
                                         }
                                         case 9: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Lista);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de cuartos");
+                                            int cuarto = leer.nextInt();
+                                            ((Casas) Lista.get(pos)).setCuarto(cuarto);
 
                                             break;
                                         }
                                         case 10: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Lista);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            if (((Casas) Lista.get(pos)).getComprado() == 1) {
+                                                System.out.println("Ingrese el nuevo nombre del dueño");
+                                                leer.nextLine();
+                                                String dueno = leer.nextLine();
+                                                ((Casas) Lista.get(pos)).setLandlord(dueno);
+                                            } else {
+                                                System.out.println("No puede modificar esto no tiene la casa comprada");
+                                            }
 
                                             break;
                                         }
                                         case 11: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Lista);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo estado de la casa");
+                                            System.out.println("1. Lista\n2. En construccion \n3. Construccion en espera\n4. Espera de Demolicion");
+                                            int estado2 = leer.nextInt();
+                                            ((Casas) Lista.get(pos)).setEstado(estado2);
 
                                             break;
                                         }
                                         case 12: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Lista);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo Ingeniero");
+                                            leer.nextLine();
+                                            String inge = leer.nextLine();
+                                            ((Casas) Lista.get(pos)).setInge(inge);
 
                                             break;
                                         }
@@ -232,11 +324,492 @@ public class Lab02_FelipeLin {
                                         default:
                                             System.out.println("No existe esa opcion");
                                     }
+                                } else if (estado == 2 && Construccion.size() > 0) {
+                                    switch (modi) {
+                                        case 1: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Construccion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de casa");
+                                            int Ncasa = leer.nextInt();
+                                            ((Casas) Construccion.get(pos)).setNCasa(Ncasa);
+                                            break;
+                                        }
+
+                                        case 2: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Construccion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero bloque");
+                                            int Nbloque = leer.nextInt();
+                                            ((Casas) Construccion.get(pos)).setNBloque(Nbloque);
+
+                                            break;
+                                        }
+                                        case 3: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Construccion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo color");
+                                            leer.nextLine();
+                                            String color = leer.nextLine();
+                                            ((Casas) Construccion.get(pos)).setColor(color);
+
+                                            break;
+                                        }
+                                        case 4: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Construccion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo ancho");
+                                            int ancho = leer.nextInt();
+                                            ((Casas) Construccion.get(pos)).setAncho(ancho);
+
+                                            break;
+                                        }
+                                        case 5: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Construccion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo largo");
+                                            int ancho = leer.nextInt();
+                                            ((Casas) Construccion.get(pos)).setAncho(ancho);
+
+                                            break;
+                                        }
+                                        case 6: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Construccion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese si fue comprado o no");
+                                            System.out.println("1. Si \n2. No");
+                                            int comprado = leer.nextInt();
+                                            ((Casas) Construccion.get(pos)).setComprado(comprado);
+
+                                            break;
+                                        }
+                                        case 7: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Construccion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de pisos");
+                                            int pisos = leer.nextInt();
+                                            ((Casas) Construccion.get(pos)).setPiso(pisos);
+
+                                            break;
+                                        }
+                                        case 8: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Construccion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de baños");
+                                            int banos = leer.nextInt();
+                                            ((Casas) Construccion.get(pos)).setBano(banos);
+
+                                            break;
+                                        }
+                                        case 9: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Construccion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de cuartos");
+                                            int cuarto = leer.nextInt();
+                                            ((Casas) Construccion.get(pos)).setCuarto(cuarto);
+
+                                            break;
+                                        }
+                                        case 10: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Construccion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            if (((Casas) Construccion.get(pos)).getComprado() == 1) {
+                                                System.out.println("Ingrese el nuevo nombre del dueño");
+                                                leer.nextLine();
+                                                String dueno = leer.nextLine();
+                                                ((Casas) Construccion.get(pos)).setLandlord(dueno);
+                                            } else {
+                                                System.out.println("No puede modificar esto no tiene la casa comprada");
+                                            }
+
+                                            break;
+                                        }
+                                        case 11: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Construccion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo estado de la casa");
+                                            System.out.println("1. Lista\n2. En construccion \n3. Construccion en espera\n4. Espera de Demolicion");
+                                            int estado2 = leer.nextInt();
+                                            ((Casas) Construccion.get(pos)).setEstado(estado2);
+
+                                            break;
+                                        }
+                                        case 12: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Construccion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo Ingeniero");
+                                            leer.nextLine();
+                                            String inge = leer.nextLine();
+                                            ((Casas) Construccion.get(pos)).setInge(inge);
+
+                                            break;
+                                        }
+
+                                        default:
+                                            System.out.println("No existe esa opcion");
+                                    }
+                                } else if (estado == 3 && Espera.size() > 0) {
+                                    switch (modi) {
+                                        case 1: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Espera);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de casa");
+                                            int Ncasa = leer.nextInt();
+                                            ((Casas) Espera.get(pos)).setNCasa(Ncasa);
+                                            break;
+                                        }
+
+                                        case 2: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Espera);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero bloque");
+                                            int Nbloque = leer.nextInt();
+                                            ((Casas) Espera.get(pos)).setNBloque(Nbloque);
+
+                                            break;
+                                        }
+                                        case 3: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Espera);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo color");
+                                            leer.nextLine();
+                                            String color = leer.nextLine();
+                                            ((Casas) Espera.get(pos)).setColor(color);
+
+                                            break;
+                                        }
+                                        case 4: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Espera);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo ancho");
+                                            int ancho = leer.nextInt();
+                                            ((Casas) Espera.get(pos)).setAncho(ancho);
+
+                                            break;
+                                        }
+                                        case 5: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Espera);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo largo");
+                                            int ancho = leer.nextInt();
+                                            ((Casas) Espera.get(pos)).setAncho(ancho);
+
+                                            break;
+                                        }
+                                        case 6: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Espera);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese si fue comprado o no");
+                                            System.out.println("1. Si \n2. No");
+                                            int comprado = leer.nextInt();
+                                            ((Casas) Espera.get(pos)).setComprado(comprado);
+
+                                            break;
+                                        }
+                                        case 7: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Espera);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de pisos");
+                                            int pisos = leer.nextInt();
+                                            ((Casas) Espera.get(pos)).setPiso(pisos);
+
+                                            break;
+                                        }
+                                        case 8: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Espera);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de baños");
+                                            int banos = leer.nextInt();
+                                            ((Casas) Espera.get(pos)).setBano(banos);
+
+                                            break;
+                                        }
+                                        case 9: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Espera);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de cuartos");
+                                            int cuarto = leer.nextInt();
+                                            ((Casas) Espera.get(pos)).setCuarto(cuarto);
+
+                                            break;
+                                        }
+                                        case 10: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Espera);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            if (((Casas) Espera.get(pos)).getComprado() == 1) {
+                                                System.out.println("Ingrese el nuevo nombre del dueño");
+                                                leer.nextLine();
+                                                String dueno = leer.nextLine();
+                                                ((Casas) Espera.get(pos)).setLandlord(dueno);
+                                            } else {
+                                                System.out.println("No puede modificar esto no tiene la casa comprada");
+                                            }
+
+                                            break;
+                                        }
+                                        case 11: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Espera);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo estado de la casa");
+                                            System.out.println("1. Lista\n2. En construccion \n3. Construccion en espera\n4. Espera de Demolicion");
+                                            int estado2 = leer.nextInt();
+                                            ((Casas) Espera.get(pos)).setEstado(estado2);
+
+                                            break;
+                                        }
+                                        case 12: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Espera);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo Ingeniero");
+                                            leer.nextLine();
+                                            String inge = leer.nextLine();
+                                            ((Casas) Espera.get(pos)).setInge(inge);
+
+                                            break;
+                                        }
+
+                                        default:
+                                            System.out.println("No existe esa opcion");
+                                    }
+                                } else if (estado == 4 && Demolicion.size() > 0) {
+                                    switch (modi) {
+                                        case 1: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Demolicion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de casa");
+                                            int Ncasa = leer.nextInt();
+                                            ((Casas) Demolicion.get(pos)).setNCasa(Ncasa);
+                                            break;
+                                        }
+
+                                        case 2: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Demolicion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero bloque");
+                                            int Nbloque = leer.nextInt();
+                                            ((Casas) Demolicion.get(pos)).setNBloque(Nbloque);
+
+                                            break;
+                                        }
+                                        case 3: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Demolicion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo color");
+                                            leer.nextLine();
+                                            String color = leer.nextLine();
+                                            ((Casas) Demolicion.get(pos)).setColor(color);
+
+                                            break;
+                                        }
+                                        case 4: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Demolicion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo ancho");
+                                            int ancho = leer.nextInt();
+                                            ((Casas) Demolicion.get(pos)).setAncho(ancho);
+
+                                            break;
+                                        }
+                                        case 5: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Demolicion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo largo");
+                                            int ancho = leer.nextInt();
+                                            ((Casas) Demolicion.get(pos)).setAncho(ancho);
+
+                                            break;
+                                        }
+                                        case 6: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Demolicion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese si fue comprado o no");
+                                            System.out.println("1. Si \n2. No");
+                                            int comprado = leer.nextInt();
+                                            ((Casas) Demolicion.get(pos)).setComprado(comprado);
+
+                                            break;
+                                        }
+                                        case 7: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Demolicion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de pisos");
+                                            int pisos = leer.nextInt();
+                                            ((Casas) Demolicion.get(pos)).setPiso(pisos);
+
+                                            break;
+                                        }
+                                        case 8: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Demolicion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de baños");
+                                            int banos = leer.nextInt();
+                                            ((Casas) Demolicion.get(pos)).setBano(banos);
+
+                                            break;
+                                        }
+                                        case 9: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Demolicion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo numero de cuartos");
+                                            int cuarto = leer.nextInt();
+                                            ((Casas) Demolicion.get(pos)).setCuarto(cuarto);
+
+                                            break;
+                                        }
+                                        case 10: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Demolicion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            if (((Casas) Demolicion.get(pos)).getComprado() == 1) {
+                                                System.out.println("Ingrese el nuevo nombre del dueño");
+                                                leer.nextLine();
+                                                String dueno = leer.nextLine();
+                                                ((Casas) Demolicion.get(pos)).setLandlord(dueno);
+                                            } else {
+                                                System.out.println("No puede modificar esto no tiene la casa comprada");
+                                            }
+
+                                            break;
+                                        }
+                                        case 11: {
+                                            System.out.println("Casas listas");
+                                            System.out.println(Demolicion);
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo estado de la casa");
+                                            System.out.println("1. Lista\n2. En construccion \n3. Construccion en espera\n4. Espera de Demolicion");
+                                            int estado2 = leer.nextInt();
+                                            ((Casas) Demolicion.get(pos)).setEstado(estado2);
+
+                                            break;
+                                        }
+                                        case 12: {
+                                            System.out.println("Casas listas");
+                                            for (Casas casas : Demolicion) {
+                                                System.out.println(Demolicion.indexOf(casas) + " " + casas);
+                                            }
+
+                                            System.out.println("Ingrese la posicion que quiere modificar");
+                                            int pos = leer.nextInt();
+                                            System.out.println("Ingrese el nuevo Ingeniero");
+                                            leer.nextLine();
+                                            String inge = leer.nextLine();
+                                            ((Casas) Demolicion.get(pos)).setInge(inge);
+
+                                            break;
+                                        }
+
+                                        default:
+                                            System.out.println("No existe esa opcion");
+                                    }
+                                } else {
+                                    System.out.println("Ingreso la opcion equivocada o no hay casas en el estado que escojio");
                                 }
                                 break;
                             }
 
-                            case 3: {
+                            case 2: {
                                 System.out.println("Casas listas");
                                 System.out.println(Lista);
                                 System.out.println("Casas en construccion");
